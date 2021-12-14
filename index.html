@@ -8,12 +8,58 @@
    <title>Document</title>
 
    <link rel="stylesheet" href="css/tailwind.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet">
 </head>
 
-<body>
+<body class="font-body">
 
-   <header>
+   <header class="bg-hero-pattern bg-contain py-[65px]">
+      <div class="container">
+         <!-- MENU LOGO CALLBACK START -->
+         <div class="header__menu flex justify-between items-center">
+            <div class="w-[15%]">
+               <img src="img/logo.png" alt="" class="w-full">
+            </div>
+            <div class="w-5/12">
+               <ul class="flex justify-between text-white">
+                  <li><a href="#">Главная</a></li>
+                  <li><a href="#">Преимущество</a></li>
+                  <li><a href="#">Планировка</a></li>
+                  <li><a href="#">Рассрочка</a></li>
+               </ul>
+            </div>
+            <div class="w-[20%] flex justify-between">
+               <div class="header__phone">
+                  <a href="#" class="border bottom-1 py-[4px] px-[25px] text-white rounded-[10px]">0555 444 444</a>
+               </div>
+               <div class="header__language">
+                  <a href="#" class="bg-[#8d7f72] text-white py-[4px] px-[8px] rounded-[10px]">RU</a>
+               </div>
+            </div>
+         </div>
+         <!-- MENU LOGO CALLBACK END -->
 
+         <!-- HEADER DESCRIPTION START -->
+         <div class="header__description mt-[115px]">
+            <h1 class="text-[78px] text-white font-thin leading-tight">
+               Клубный дом <br />
+               President Palace</h1>
+            <p class="text-[32px] text-white leading-tight font-thin">14 этажей премиум-класса <br />
+               в престижном “Золотом квадрате”</p>
+         </div>
+         <!-- HEADER DESCRIPTION END -->
+         <div class="flex justify-between mt-[60px]">
+            <div class="w-[13%]">
+               <img src="img/palace_logo.png" alt="" class="w-full">
+            </div>
+
+            <div class="w-6/12"></div>
+         </div>
+      </div>
    </header>
 </body>
 
