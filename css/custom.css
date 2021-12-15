@@ -24,7 +24,7 @@
     @apply px-[15px];
   }
   h1 {
-    @apply text-[41px];
+    @apply text-[41px] leading-none;
   }
   h2 {
     @apply text-[30px];
@@ -36,6 +36,9 @@
   }
   .about__advatges--description {
     @apply text-[16px] mt-[15px];
+  }
+  .btn-primary {
+    @apply w-full py-[25px] text-center block border-2 mt-[80px] rounded-[10px] bg-[#ffffff3b];
   }
 }
 

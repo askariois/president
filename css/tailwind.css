@@ -447,6 +447,7 @@ img {
 
 h1 {
   font-size: 41px;
+  line-height: 1;
 }
 
 h2 {
@@ -491,6 +492,20 @@ h2 {
 .about__advatges--description {
   margin-top: 15px;
   font-size: 16px;
+}
+
+.btn-primary {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 80px;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  border-width: 2px;
+  background-color: #ffffff3b;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
 .absolute {
@@ -565,6 +580,10 @@ h2 {
 
 .mt-\[230px\] {
   margin-top: 230px;
+}
+
+.mt-\[17px\] {
+  margin-top: 17px;
 }
 
 .block {
@@ -643,24 +662,12 @@ h2 {
   justify-content: space-between;
 }
 
-.justify-items-end {
-  justify-items: end;
-}
-
 .rounded-\[10px\] {
   border-radius: 10px;
 }
 
 .border {
   border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border-4 {
-  border-width: 4px;
 }
 
 .border-8 {
@@ -680,10 +687,6 @@ h2 {
 .bg-\[\#0017ff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 23 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#ffffff3b\] {
-  background-color: #ffffff3b;
 }
 
 .bg-\[\#a89b8d\] {
@@ -716,6 +719,10 @@ h2 {
   background-image: url('../img/video.jpg');
 }
 
+.bg-price-pattern {
+  background-image: url('../img/price_bg.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -730,6 +737,10 @@ h2 {
 
 .bg-bottom {
   background-position: bottom;
+}
+
+.bg-right {
+  background-position: right;
 }
 
 .bg-no-repeat {
@@ -771,16 +782,6 @@ h2 {
   padding-bottom: 6px;
 }
 
-.py-\[25px\] {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.py-\[110px\] {
-  padding-top: 110px;
-  padding-bottom: 110px;
-}
-
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -789,6 +790,11 @@ h2 {
 .py-\[160px\] {
   padding-top: 160px;
   padding-bottom: 160px;
+}
+
+.py-\[100px\] {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .pl-\[30px\] {
@@ -815,40 +821,8 @@ h2 {
   padding-left: 40px;
 }
 
-.pt-\[110px\] {
-  padding-top: 110px;
-}
-
-.pb-\[50px\] {
-  padding-bottom: 50px;
-}
-
 .pb-\[30px\] {
   padding-bottom: 30px;
-}
-
-.pt-\[80px\] {
-  padding-top: 80px;
-}
-
-.pt-\[25px\] {
-  padding-top: 25px;
-}
-
-.pt-\[0px\] {
-  padding-top: 0px;
-}
-
-.pb-\[00px\] {
-  padding-bottom: 00px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
 }
 
 .font-body {

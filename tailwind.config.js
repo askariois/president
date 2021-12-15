@@ -20,6 +20,7 @@ module.exports = {
         "visual-pattern": "url('../img/visual.png')",
         "light-pattern": "url('../img/light.png')",
         "video-pattern": "url('../img/video.jpg')",
+        "price-pattern": "url('../img/price_bg.png')",
       },
     },
   },
