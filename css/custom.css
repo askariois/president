@@ -3,7 +3,41 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply text-white font-light;
+  }
   img {
     image-rendering: pixelated;
   }
+  .w-1\/12,
+  .w-2\/12,
+  .w-3\/12,
+  .w-4\/12,
+  .w-5\/12,
+  .w-6\/12,
+  .w-7\/12,
+  .w-8\/12,
+  .w-9\/12,
+  .w-10\/12,
+  .w-11\/12,
+  .w-full {
+    @apply px-[15px];
+  }
+  h1 {
+    @apply text-[41px];
+  }
+  h2 {
+    @apply text-[30px];
+  }
+}
+@layer components {
+  .about__advatges--title {
+    @apply text-[24px] leading-7;
+  }
+  .about__advatges--description {
+    @apply text-[16px] mt-[15px];
+  }
+}
+
+@layer utilities {
 }

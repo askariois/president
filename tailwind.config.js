@@ -16,6 +16,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('../img/home.jpg')",
+        "about-pattern": "url('../img/about.jpg')",
+        "visual-pattern": "url('../img/visual.png')",
+        "light-pattern": "url('../img/light.png')",
+        "video-pattern": "url('../img/video.jpg')",
       },
     },
   },
