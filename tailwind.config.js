@@ -29,6 +29,9 @@ module.exports = {
         "price-pattern": "url('../img/price_bg.png')",
         "price-auto-pattern": "url('../img/price_auto.png')",
       },
+      brightness: {
+        20: ".2",
+      },
     },
   },
   plugins: [],

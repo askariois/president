@@ -59,4 +59,17 @@
   .footer__social a:hover img {
     @apply mt-[-10px] transition-all	 duration-500;
   }
+  .visual img {
+    @apply w-full px-0;
+  }
+  .visual-miniature img {
+    @apply h-[150px] object-cover;
+  }
+  .sl__visual--miniature .slick-slide img {
+    @apply brightness-20 cursor-pointer;
+  }
+
+  .sl__visual--miniature .slick-center img {
+    @apply brightness-100;
+  }
 }

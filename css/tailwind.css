@@ -426,6 +426,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  --tw-blur: var(--tw-empty,/*!*/ /*!*/);
+  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+  --tw-invert: var(--tw-empty,/*!*/ /*!*/);
+  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 body {
@@ -524,6 +534,10 @@ h2 {
   bottom: -56%;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -613,10 +627,6 @@ h2 {
 
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-\[15\%\] {
@@ -731,6 +741,10 @@ h2 {
   background-color: rgb(168 155 141 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#0000007a\] {
+  background-color: #0000007a;
+}
+
 .bg-\[\#000\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -756,10 +770,6 @@ h2 {
 
 .bg-about-pattern {
   background-image: url('../img/about.jpg');
-}
-
-.bg-visual-pattern {
-  background-image: url('../img/visual.png');
 }
 
 .bg-video-pattern {
@@ -916,4 +926,27 @@ h2 {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
+}
+
+.visual img {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.visual-miniature img {
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sl__visual--miniature .slick-slide img {
+  cursor: pointer;
+  --tw-brightness: brightness(.2);
+  filter: var(--tw-filter);
+}
+
+.sl__visual--miniature .slick-center img {
+  --tw-brightness: brightness(1);
+  filter: var(--tw-filter);
 }
