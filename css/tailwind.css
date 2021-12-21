@@ -546,6 +546,11 @@ h2 {
   margin-bottom: 20px;
 }
 
+.my-\[100px\] {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .mt-\[115px\] {
   margin-top: 115px;
 }
@@ -582,8 +587,20 @@ h2 {
   margin-top: 230px;
 }
 
+.ml-\[50px\] {
+  margin-left: 50px;
+}
+
 .mt-\[17px\] {
   margin-top: 17px;
+}
+
+.mt-\[15px\] {
+  margin-top: 15px;
+}
+
+.mr-\[20px\] {
+  margin-right: 20px;
 }
 
 .block {
@@ -634,6 +651,22 @@ h2 {
   width: 58.333333%;
 }
 
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
+}
+
+.w-3\/12 {
+  width: 25%;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -660,6 +693,10 @@ h2 {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.whitespace-normal {
+  white-space: normal;
 }
 
 .rounded-\[10px\] {
@@ -694,9 +731,19 @@ h2 {
   background-color: rgb(168 155 141 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#0f0b20\] {
   --tw-bg-opacity: 1;
   background-color: rgb(15 11 32 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#54483d\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(84 72 61 / var(--tw-bg-opacity));
 }
 
 .bg-hero-pattern {
@@ -723,28 +770,12 @@ h2 {
   background-image: url('../img/price_bg.png');
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-contain {
-  background-size: contain;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-bottom {
-  background-position: bottom;
-}
-
-.bg-right {
-  background-position: right;
-}
-
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.p-\[15px\] {
+  padding: 15px;
 }
 
 .py-\[65px\] {
@@ -787,14 +818,14 @@ h2 {
   padding-right: 0px;
 }
 
-.py-\[160px\] {
-  padding-top: 160px;
-  padding-bottom: 160px;
-}
-
 .py-\[100px\] {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.py-\[80px\] {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .pl-\[30px\] {
@@ -825,6 +856,14 @@ h2 {
   padding-bottom: 30px;
 }
 
+.pb-\[50px\] {
+  padding-bottom: 50px;
+}
+
+.text-left {
+  text-align: left;
+}
+
 .font-body {
   font-family: Open Sans;
 }
@@ -852,4 +891,29 @@ h2 {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.price__1metr {
+  margin-top: 50px;
+}
+
+.price__1metr--list li {
+  margin-bottom: 25px;
+}
+
+.bg-auto {
+  background-image: url('../img/price_auto.png');
+  background-position: 200px center;
+  background-repeat: no-repeat;
+}
+
+.footer__social a img {
+  transition-duration: 500ms;
+}
+
+.footer__social a:hover img {
+  margin-top: -10px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }

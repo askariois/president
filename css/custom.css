@@ -43,4 +43,20 @@
 }
 
 @layer utilities {
+  .price__1metr {
+    @apply mt-[50px];
+  }
+  .price__1metr--list li {
+    @apply mb-[25px];
+  }
+  .bg-auto {
+    @apply bg-price-auto-pattern  bg-no-repeat bg-custom;
+  }
+  .footer__social a img {
+    @apply duration-500;
+  }
+
+  .footer__social a:hover img {
+    @apply mt-[-10px] transition-all	 duration-500;
+  }
 }
