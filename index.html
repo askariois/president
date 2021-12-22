@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-
+   <link rel="stylesheet" href="css/jquery.qtip.css">
    <link rel="stylesheet" href="css/tailwind.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,12 @@
       rel="stylesheet">
    <link rel="stylesheet" href="css/slick.css">
    <link rel="stylesheet" href="css/slick-theme.css">
+
 </head>
 
 <body class="font-body">
    <!-- HEADER START -->
-   <header class="bg-hero-pattern relative bg-cover py-[65px]">
+   <header class="bg-[url('/img/home.jpg')] relative bg-cover py-[65px]">
       <div class="container">
          <!-- MENU LOGO CALLBACK START -->
          <div class="header__menu flex justify-between items-center">
@@ -27,7 +28,7 @@
                <img src="img/logo.png" alt="" class="w-full">
             </div>
             <div class="w-5/12">
-               <ul class="flex justify-between text-white">
+               <ul class="flex justify-between text-white header__menu-menu">
                   <li><a href="#">Главная</a></li>
                   <li><a href="#">Преимущество</a></li>
                   <li><a href="#">Планировка</a></li>
@@ -36,7 +37,10 @@
             </div>
             <div class="w-[20%] flex justify-between">
                <div class="header__phone">
-                  <a href="#" class="border bottom-1 py-[4px] px-[25px] text-white rounded-[10px]">0555 444 444</a>
+                  <a href="#"
+                     class="border bottom-1 py-[4px] px-[25px] text-white rounded-[10px] hover:bg-white hover:text-[#554b3f]">0555
+                     444
+                     444</a>
                </div>
                <div class="header__language">
                   <a href="#" class="bg-[#8d7f72] text-white py-[4px] px-[8px] rounded-[10px]">RU</a>
@@ -61,7 +65,7 @@
 
             <div class="w-6/12 text-white ">
                <div class="header__baner--phone flex items-center justify-end">
-                  <a href="#" class="flex relative">
+                  <a href="#" class="flex relative z-[9999]">
                      <div class="bg-[#0017ff] rounded-[10px] py-[10px] px-[40px] relative z-10">
                         Заказать звонок
                      </div>
@@ -240,43 +244,43 @@
    <!-- VISUAL END  -->
 
    <!-- LAYOUT START  -->
-   <section class="layout bg-[#000]" id="layout">
+   <section class="layout bg-[#0f0b20] py-[100px]" id="layout">
       <div class="container">
-         <div class="all__heading">
-            типы планировок
-         </div>
-         <ul class="nav layout-nav" id="pills-tab" role="tablist">
+         <h1>Типы планировок
+         </h1>
+         <ul class="nav flex items-center mt-[50px] pb-[25px] mb-[25px] border-b border-white justify-between"
+            id="pills-tab" role="tablist">
             <li class="tabs-nav__item">
-               <a class="nav-link active" id="pills-home-tab" data-toggle="pill"
-                  href="https://president-palace.kg//#room1" role="tab" aria-controls="pills-home"
-                  aria-selected="true">1-комнатные</a>
+               <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#room1" role="tab"
+                  aria-controls="pills-home" aria-selected="true">1-комнатные</a>
             </li>
             <li class="tabs-nav__item">
-               <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="https://president-palace.kg//#room2"
-                  role="tab" aria-controls="pills-profile" aria-selected="false">2-комнатные</a>
+               <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#room2" role="tab"
+                  aria-controls="pills-profile" aria-selected="false">2-комнатные</a>
             </li>
             <li class="tabs-nav__item">
-               <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="https://president-palace.kg//#room3"
-                  role="tab" aria-controls="pills-contact" aria-selected="false">3-комнатные</a>
+               <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#room3" role="tab"
+                  aria-controls="pills-contact" aria-selected="false">3-комнатные</a>
             </li>
             <li class="tabs-nav__item">
-               <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="https://president-palace.kg//#room5"
-                  role="tab" aria-controls="pills-contact" aria-selected="false">5-комнатные</a>
+               <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#room5" role="tab"
+                  aria-controls="pills-contact" aria-selected="false">5-комнатные</a>
             </li>
          </ul>
          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active layout__room--flat" id="room1" role="tabpanel"
+            <div class="tab-pane fade show active layout__room--flat relative" id="room1" role="tabpanel"
                aria-labelledby="pills-home-tab">
 
-               <div class="tab-content">
-                  <div id="room_1_2" class="tab-pane in active">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+               <div class="tab-content ">
+                  <div id="room_1_2" class="tab-pane in active ">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 46,16 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 46,16 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 5,60 м2</span>
                                  </li>
@@ -299,23 +303,24 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout_1_2.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout_1_2.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout_1_2.png" class="html5lightbox">
+                                 <img src="img/layout_1_2.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div id="room_1_1" class="tab-pane fade">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 57,21 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 57,12 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 8,29 м2</span>
                                  </li>
@@ -335,23 +340,24 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout_1_1.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout_1_1.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout_1_1.png" class="html5lightbox">
+                                 <img src="img/layout_1_1.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div id="room_1_3" class="tab-pane fade">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 104,72 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 104,72 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex">
                                  <li>
                                     <p>Хол</p> <span> 8,29 м2</span>
                                  </li>
@@ -368,50 +374,50 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout_1_3.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout_1_3.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout_1_3.png" class="html5lightbox">
+                                 <img src="img/layout_1_3.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
+               <div class="mini-tabs absolute bottom-0 pl-[15px] w-6/12 ">
+                  Вариации квадратуры и планировки
+                  <ul class="nav flex justify-between items-center mt-[30px] w-full px-0">
 
-               <ul class="nav mini-tabs col-lg-6">
-
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_1_2" class="active">
-                        <img src="./Клубный дом «President Palace»_files/layout_1_2.png" alt="" class="w-100">
-                        <h6>46,16 м2</h6>
-                     </a>
-                  </li>
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_1_1">
-                        <img src="./Клубный дом «President Palace»_files/layout_1_1.png" alt="" class="w-100">
-                        <h6>57,21 м2</h6>
-                     </a>
-                  </li>
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_1_3">
-                        <img src="./Клубный дом «President Palace»_files/layout_1_3.png" alt="" class="w-100">
-                        <h6>104,72 м2</h6>
-                     </a>
-                  </li>
-               </ul>
+                     <li>
+                        <a data-toggle="tab" href="#room_1_2" class="active">
+                           <h6>46,16 м2</h6>
+                        </a>
+                     </li>
+                     <li>
+                        <a data-toggle="tab" href="#room_1_1">
+                           <h6>57,21 м2</h6>
+                        </a>
+                     </li>
+                     <li>
+                        <a data-toggle="tab" href="#room_1_3">
+                           <h6>104,72 м2</h6>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
             </div>
-            <div class="tab-pane fade layout__room--flat" id="room2" role="tabpanel"
+            <div class="tab-pane fade layout__room--flat relative" id="room2" role="tabpanel"
                aria-labelledby="pills-profile-tab">
                <div class="tab-content">
                   <div id="room_2_1" class="tab-pane in active">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 73,17 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 73,17 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 10,16 м2</span>
                                  </li>
@@ -437,23 +443,24 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout2_1.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout2_1.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout2_1.png" class="html5lightbox">
+                                 <img src="img/layout2_1.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div id="room_2_2" class="tab-pane fade">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 73,30 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 73,30 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 10,16 м2</span>
                                  </li>
@@ -479,23 +486,24 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout2_2.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout2_2.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout2_2.png" class="html5lightbox">
+                                 <img src="img/layout2_2.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div id="room_2_3" class="tab-pane fade">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 70,39 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 70,39 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 10,16 м2</span>
                                  </li>
@@ -521,23 +529,24 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout2_3.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout2_3.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout2_3.png" class="html5lightbox">
+                                 <img src="img/layout2_3.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div id="room_2_4" class="tab-pane fade">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 71,39 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 71,39 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 10,16 м2</span>
                                  </li>
@@ -563,23 +572,24 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout2_4.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout2_4.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout2_4.png" class="html5lightbox">
+                                 <img src="img/layout2_4.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div id="room_2_5" class="tab-pane fade">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 121,90 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 121,90 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Кухня</p> <span> 10,20 м2</span>
                                  </li>
@@ -596,61 +606,60 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout2_5.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout2_5.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout2_5.png" class="html5lightbox">
+                                 <img src="img/layout2_5.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
+               <div class="mini-tabs absolute bottom-0 pl-[15px] w-6/12 ">
+                  Вариации квадратуры и планировки
+                  <ul class="nav flex justify-between items-center mt-[30px] w-full px-0">
 
-               <ul class="nav mini-tabs col-lg-6">
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_2_1" class="active">
-                        <img src="./Клубный дом «President Palace»_files/layout2_1.png" alt="" class="w-100">
-                        <h6>73,17 м2</h6>
-                     </a>
-                  </li>
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_2_2">
-                        <img src="./Клубный дом «President Palace»_files/layout2_2.png" alt="" class="w-100">
-                        <h6>73,30 м2</h6>
-                     </a>
-                  </li>
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_2_3">
-                        <img src="./Клубный дом «President Palace»_files/layout2_3.png" alt="" class="w-100">
-                        <h6>70,39 м2</h6>
-                     </a>
-                  </li>
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_2_4">
-                        <img src="./Клубный дом «President Palace»_files/layout2_4.png" alt="" class="w-100">
-                        <h6>71,39 м2</h6>
-                     </a>
-                  </li>
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_2_5">
-                        <img src="./Клубный дом «President Palace»_files/layout2_5.png" alt="" class="w-100">
-                        <h6>121,90 м2</h6>
-                     </a>
-                  </li>
-               </ul>
+                     <li>
+                        <a data-toggle="tab" href="#room_2_1" class="active">
+                           <h6>73,17 м2</h6>
+                        </a>
+                     </li>
+                     <li>
+                        <a data-toggle="tab" href="#room_2_2">
+                           <h6>73,30 м2</h6>
+                        </a>
+                     </li>
+                     <li>
+                        <a data-toggle="tab" href="#room_2_3">
+                           <h6>70,39 м2</h6>
+                        </a>
+                     </li>
+                     <li>
+                        <a data-toggle="tab" href="#room_2_4">
+                           <h6>71,39 м2</h6>
+                        </a>
+                     </li>
+                     <li>
+                        <a data-toggle="tab" href="#room_2_5">
+                           <h6>121,90 м2</h6>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
             </div>
-            <div class="tab-pane fade layout__room--flat" id="room3" role="tabpanel"
+            <div class="tab-pane fade layout__room--flat relative" id="room3" role="tabpanel"
                aria-labelledby="pills-contact-tab">
                <div class="tab-content">
                   <div id="room_3_1" class="tab-pane in active">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 102,88 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 102,88 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 15,04 м2</span>
                                  </li>
@@ -676,23 +685,24 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout3_2.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout3_2.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout3_2.png" class="html5lightbox">
+                                 <img src="img/layout3_2.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div id="room_3_3" class="tab-pane fade">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 104,94 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 104,94 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 15,04 м2</span>
                                  </li>
@@ -718,23 +728,24 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout3_3.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout3_3.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout3_3.png" class="html5lightbox">
+                                 <img src="img/layout3_3.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div id="room_3_2" class="tab-pane fade">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 107,69 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 107,69 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 15,04 м2</span>
                                  </li>
@@ -760,23 +771,24 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout3_1.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout3_1.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout3_1.png" class="html5lightbox">
+                                 <img src="img/layout3_1.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div id="room_3_4" class="tab-pane fade">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 137,91 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 137,91 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 7,68 м2</span>
                                  </li>
@@ -796,55 +808,54 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout3_4.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout3_4.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout3_4.png" class="html5lightbox">
+                                 <img src="img/layout3_4.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-
-               <ul class="nav mini-tabs col-lg-6">
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_3_1" class="active">
-                        <img src="./Клубный дом «President Palace»_files/layout3_1.png" alt="" class="w-100">
-                        <h6>102,88 м2</h6>
-                     </a>
-                  </li>
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_3_3">
-                        <img src="./Клубный дом «President Palace»_files/layout3_3.png" alt="" class="w-100">
-                        <h6>104,94 м2</h6>
-                     </a>
-                  </li>
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_3_2">
-                        <img src="./Клубный дом «President Palace»_files/layout3_2.png" alt="" class="w-100">
-                        <h6>107,69 м2</h6>
-                     </a>
-                  </li>
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_3_4">
-                        <img src="./Клубный дом «President Palace»_files/layout3_4.png" alt="" class="w-100">
-                        <h6>137,91 м2</h6>
-                     </a>
-                  </li>
-               </ul>
+               <div class="mini-tabs absolute bottom-0 pl-[15px] w-6/12 ">
+                  Вариации квадратуры и планировки
+                  <ul class="nav flex justify-between items-center mt-[30px] w-full px-0">
+                     <li>
+                        <a data-toggle="tab" href="#room_3_1" class="active">
+                           <h6>102,88 м2</h6>
+                        </a>
+                     </li>
+                     <li>
+                        <a data-toggle="tab" href="#room_3_3">
+                           <h6>104,94 м2</h6>
+                        </a>
+                     </li>
+                     <li>
+                        <a data-toggle="tab" href="#room_3_2">
+                           <h6>107,69 м2</h6>
+                        </a>
+                     </li>
+                     <li>
+                        <a data-toggle="tab" href="#room_3_4">
+                           <h6>137,91 м2</h6>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
             </div>
-            <div class="tab-pane fade layout__room--flat" id="room5" role="tabpanel"
+            <div class="tab-pane fade layout__room--flat relative" id="room5" role="tabpanel"
                aria-labelledby="pills-contact-tab">
                <div class="tab-content">
                   <div id="room_5_1" class="tab-pane in active">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 204,57 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 204,57 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 27,31 м2</span>
                                  </li>
@@ -873,23 +884,24 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout5_1.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout5_1.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout5_1.png" class="html5lightbox">
+                                 <img src="img/layout5_1.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                   <div id="room_5_2" class="tab-pane fade">
-                     <div class="row no-gutters layout__room">
-                        <div class="col-lg-6">
+                     <div class="flex no-gutters layout__room">
+                        <div class="w-6/12">
                            <div class="layout__room--desc">
-                              <div class="layout__room--number">
-                                 204,57 м2
+                              <div class="layout__room--number text-[18px] mb-[50px]">
+                                 Аппартаменты <br />
+                                 <span> 204,57 м2</span>
                               </div>
-                              <ul class="layout__room--square d-flex">
+                              <ul class="layout__room--square flex flex-wrap">
                                  <li>
                                     <p>Хол</p> <span> 27,31 м2</span>
                                  </li>
@@ -918,31 +930,32 @@
                               <hr>
                            </div>
                         </div>
-                        <div class="col-lg-6">
-                           <div class="d-flex align-items-center layout__room--img">
-                              <a href="./Клубный дом «President Palace»_files/layout5_2.png" class="html5lightbox">
-                                 <img src="./Клубный дом «President Palace»_files/layout5_2.png" alt="" class="w-100">
+                        <div class="w-6/12">
+                           <div class="flex align-items-center layout__room--img">
+                              <a href="img/layout5_2.png" class="html5lightbox">
+                                 <img src="img/layout5_2.png" alt="" class="w-100">
                               </a>
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
+               <div class="mini-tabs absolute bottom-0 pl-[15px] w-6/12 ">
+                  Вариации квадратуры и планировки
+                  <ul class="nav flex justify-between items-center mt-[30px] w-full px-0">
 
-               <ul class="nav mini-tabs col-lg-6">
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_5_1" class="active">
-                        <img src="./Клубный дом «President Palace»_files/layout5_1.png" alt="" class="w-100">
-                        <h6>204,57 м2</h6>
-                     </a>
-                  </li>
-                  <li>
-                     <a data-toggle="tab" href="https://president-palace.kg//#room_5_2">
-                        <img src="./Клубный дом «President Palace»_files/layout5_2.png" alt="" class="w-100">
-                        <h6>204,57 м2</h6>
-                     </a>
-                  </li>
-               </ul>
+                     <li>
+                        <a data-toggle="tab" href="#room_5_1" class="active">
+                           <h6>204,57 м2</h6>
+                        </a>
+                     </li>
+                     <li>
+                        <a data-toggle="tab" href="#room_5_2">
+                           <h6>204,57 м2</h6>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
             </div>
          </div>
       </div>
@@ -950,9 +963,7 @@
    <!-- LAYOUT END  -->
 
    <!-- MAP START -->
-   <section class="map">
-      <div class="container"></div>
-   </section>
+
    <!-- MAP END -->
 
    <!-- VIDEO START -->
@@ -1149,9 +1160,14 @@
    <!-- FOOTER END -->
 
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-   <script src="js/slick.js"></script>
    <script src="js/bootstrap.js"></script>
+   <script src="js/slick.js"></script>
    <script src="js/custom.js"></script>
+   <script src="js/html5lightbox.js"></script>
+   <script src="js/jquery.rwdImageMaps.min.js"></script>
+   <script src="js/jquery.maphilight.min.js"></script>
+   <script src="js/jquery.qtip.js"></script>
+   <script src="js/plan.js"></script>
 </body>
 
 </html>

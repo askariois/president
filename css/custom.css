@@ -72,4 +72,48 @@
   .sl__visual--miniature .slick-center img {
     @apply brightness-100;
   }
+  .tab-content > .tab-pane {
+    @apply hidden;
+  }
+
+  .tab-content > .active {
+    @apply block;
+  }
+  .fade {
+    @apply opacity-0 transition duration-200;
+  }
+
+  .fade.show {
+    @apply opacity-100;
+  }
+  .tabs-nav__item a,
+  .mini-tabs a {
+    @apply text-[18px] border-2 px-[20px] border-transparent inline-block;
+  }
+
+  .tabs-nav__item a.active,
+  .mini-tabs a.active {
+    @apply bg-[#332b30] px-[20px] py-[10px] border-2 border-white rounded-[10px];
+  }
+  .layout__room--square li {
+    @apply w-[25%] mb-[50px];
+  }
+  .layout__room--number span {
+    @apply text-[48px];
+  }
+  #html5-watermark {
+    display: none !important;
+  }
+
+  .header__menu a {
+    @apply transition duration-500;
+  }
+  .header__menu-menu a:after {
+    content: "";
+    @apply block opacity-0  border-b-2 pb-[5px] transition duration-500;
+  }
+  .header__menu-menu a:hover:after {
+    content: "";
+    @apply block opacity-100 border-b-2 pb-[5px] transition duration-500;
+  }
 }

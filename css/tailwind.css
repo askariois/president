@@ -550,6 +550,10 @@ h2 {
   z-index: 50;
 }
 
+.z-\[9999\] {
+  z-index: 9999;
+}
+
 .my-\[40px\] {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -599,6 +603,22 @@ h2 {
 
 .mt-\[230px\] {
   margin-top: 230px;
+}
+
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
+.mb-\[25px\] {
+  margin-bottom: 25px;
+}
+
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
+.mt-\[30px\] {
+  margin-top: 30px;
 }
 
 .ml-\[50px\] {
@@ -721,6 +741,15 @@ h2 {
   border-width: 8px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -745,11 +774,6 @@ h2 {
   background-color: #0000007a;
 }
 
-.bg-\[\#000\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#0f0b20\] {
   --tw-bg-opacity: 1;
   background-color: rgb(15 11 32 / var(--tw-bg-opacity));
@@ -760,8 +784,8 @@ h2 {
   background-color: rgb(84 72 61 / var(--tw-bg-opacity));
 }
 
-.bg-hero-pattern {
-  background-image: url('../img/home.jpg');
+.bg-\[url\(\'\/img\/home\.jpg\'\)\] {
+  background-image: url('/img/home.jpg');
 }
 
 .bg-light-pattern {
@@ -778,6 +802,30 @@ h2 {
 
 .bg-price-pattern {
   background-image: url('../img/price_bg.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-auto {
+  background-size: auto;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.bg-right {
+  background-position: right;
 }
 
 .bg-no-repeat {
@@ -862,6 +910,14 @@ h2 {
   padding-left: 40px;
 }
 
+.pb-\[25px\] {
+  padding-bottom: 25px;
+}
+
+.pl-\[15px\] {
+  padding-left: 15px;
+}
+
 .pb-\[30px\] {
   padding-bottom: 30px;
 }
@@ -884,6 +940,10 @@ h2 {
 
 .text-\[32px\] {
   font-size: 32px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
 }
 
 .font-thin {
@@ -949,4 +1009,109 @@ h2 {
 .sl__visual--miniature .slick-center img {
   --tw-brightness: brightness(1);
   filter: var(--tw-filter);
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+.fade {
+  opacity: 0;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.fade.show {
+  opacity: 1;
+}
+
+.tabs-nav__item a, .mini-tabs a {
+  display: inline-block;
+  border-width: 2px;
+  border-color: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+.tabs-nav__item a.active, .mini-tabs a.active {
+  border-radius: 10px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 43 48 / var(--tw-bg-opacity));
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.layout__room--square li {
+  margin-bottom: 50px;
+  width: 25%;
+}
+
+.layout__room--number span {
+  font-size: 48px;
+}
+
+#html5-watermark {
+  display: none !important;
+}
+
+.header__menu a {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.header__menu-menu a:after {
+  content: "";
+  display: block;
+  border-bottom-width: 2px;
+  padding-bottom: 5px;
+  opacity: 0;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.header__menu-menu a:hover:after {
+  content: "";
+  display: block;
+  border-bottom-width: 2px;
+  padding-bottom: 5px;
+  opacity: 1;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.hover\:bg-\[\#0017ff\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 23 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#554b3f\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(85 75 63 / var(--tw-text-opacity));
 }
