@@ -538,6 +538,10 @@ h2 {
   bottom: 0px;
 }
 
+.z-\[9999\] {
+  z-index: 9999;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -548,10 +552,6 @@ h2 {
 
 .z-50 {
   z-index: 50;
-}
-
-.z-\[9999\] {
-  z-index: 9999;
 }
 
 .my-\[40px\] {
@@ -918,6 +918,10 @@ h2 {
   padding-left: 15px;
 }
 
+.pt-0 {
+  padding-top: 0px;
+}
+
 .pb-\[30px\] {
   padding-bottom: 30px;
 }
@@ -1099,11 +1103,6 @@ h2 {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
-}
-
-.hover\:bg-\[\#0017ff\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 23 255 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover {
