@@ -24,18 +24,21 @@
     @apply px-[15px];
   }
   h1 {
-    @apply text-[41px] leading-none;
+    @apply text-[24px] sm:text-[30px] xl:text-[41px] leading-none;
   }
   h2 {
     @apply text-[30px];
   }
+  br {
+    @apply hidden sm:block;
+  }
 }
 @layer components {
   .about__advatges--title {
-    @apply text-[24px] leading-7;
+    @apply text-[16px] sm:text-[24px] leading-7;
   }
   .about__advatges--description {
-    @apply text-[16px] mt-[15px];
+    @apply text-[12px] sm:text-[16px] mt-[15px];
   }
   .btn-primary {
     @apply w-full py-[25px] text-center block border-2 mt-[80px] rounded-[10px] bg-[#ffffff3b];
@@ -50,7 +53,7 @@
     @apply mb-[25px];
   }
   .bg-auto {
-    @apply bg-price-auto-pattern  bg-no-repeat bg-custom;
+    @apply bg-price-auto-pattern  bg-no-repeat bg-custom bg-contain;
   }
   .footer__social a img {
     @apply duration-500;
@@ -90,7 +93,16 @@
   .mini-tabs a {
     @apply text-[18px] border-2 px-[20px] border-transparent inline-block;
   }
+  .tabs-nav__item a {
+    @apply whitespace-pre;
+  }
+  .mini-tabs a {
+    @apply whitespace-nowrap;
+  }
 
+  .layout__room--number br {
+    @apply block;
+  }
   .tabs-nav__item a.active,
   .mini-tabs a.active {
     @apply bg-[#332b30] px-[20px] py-[10px] border-2 border-white rounded-[10px];
@@ -116,4 +128,29 @@
     content: "";
     @apply block opacity-100 border-b-2 pb-[5px] transition duration-500;
   }
+  .header__baner--phone a {
+    @apply transition duration-500;
+  }
+  .header__baner--phone a:hover .header__baner--phone-title {
+    @apply bg-[#0017ffd1] transition duration-500;
+  }
+  .header__baner--phone a:hover .header__baner--phone-icon {
+    @apply z-50 pl-[15px] transition duration-500;
+  }
+}
+
+.fix_position {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(15 11 32 / 79%);
+  left: 0;
+  padding: 15px 0px;
+  z-index: 9999;
+  opacity: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }

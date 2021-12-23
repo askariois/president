@@ -62,3 +62,24 @@ $(function () {
      */
   });
 });
+
+$(function () {
+  $('.header a[href^="#"] , #about a , #price a').on("click", function (event) {
+    // отменяем стандартное действие
+    event.preventDefault();
+
+    var sc = $(this).attr("href"),
+      dn = $(sc).offset().top;
+
+    $("html, body").animate({ scrollTop: dn - 100 }, 1000);
+  });
+});
+
+$(window).scroll(function () {
+  var docscroll = $(document).scrollTop();
+  if (window.pageYOffset > 250) {
+    $(".header__menu").addClass("fix_position");
+  } else {
+    $(".header__menu").removeClass("fix_position");
+  }
+});
